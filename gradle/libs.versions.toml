@@ -1,0 +1,34 @@
+[versions]
+agp = "8.6.1"
+constraintlayout = "2.2.0"
+kotlin = "1.9.0"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+lithoCore = "0.50.2"
+material = "1.12.0"
+soloader = "0.10.5"
+
+[libraries]
+androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+litho-core = { module = "com.facebook.litho:litho-core", version.ref = "lithoCore" }
+litho-processor = { module = "com.facebook.litho:litho-processor", version.ref = "lithoCore" }
+litho-sections-core = { module = "com.facebook.litho:litho-sections-core", version.ref = "lithoCore" }
+litho-sections-processor = { module = "com.facebook.litho:litho-sections-processor", version.ref = "lithoCore" }
+litho-sections-widget = { module = "com.facebook.litho:litho-sections-widget", version.ref = "lithoCore" }
+litho-widget = { module = "com.facebook.litho:litho-widget", version.ref = "lithoCore" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+soloader = { module = "com.facebook.soloader:soloader", version.ref = "soloader" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id= "org.jetbrains.kotlin.kapt", version.ref= "kotlin"}
+
